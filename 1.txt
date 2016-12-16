@@ -1,0 +1,8 @@
+set dialogResult to display dialog "Показать скрытые файлы..." buttons {"ДА", "НЕТ"}
+copy the dialogResult as list to {buttonpressed}
+if buttonpressed = "ДА" then
+do shell script "defaults write com.apple.finder AppleShowAllFiles -bool true"
+else
+do shell script "defaults write com.apple.finder AppleShowAllFiles -bool false"
+end if
+do shell script "killall Finder"
