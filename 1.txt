@@ -1,3 +1,6 @@
+added text
+
+
 set dialogResult to display dialog "Показать скрытые файлы..." buttons {"ДА", "НЕТ"}
 copy the dialogResult as list to {buttonpressed}
 if buttonpressed = "ДА" then
