@@ -1,0 +1,11 @@
+.name {
+ width: 180px;
+}
+
+.name__child {
+  width: 20px;
+}
+
+.name__parent {
+  width: 30px;
+}
